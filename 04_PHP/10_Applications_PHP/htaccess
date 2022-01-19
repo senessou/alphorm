@@ -1,0 +1,17 @@
+# -----------------------
+# Fichier de configuration Apache
+#
+# Son rôle est de rediriger toutes les requêtes vers le script index.php
+# Exemple :
+# /add?x=5&y=12 est redirigé vers /index.php?op=add&x=5&y=12
+#
+# On détermine ainsi un point d'entrée unique pour l'application
+# souvent aussi nommé 'contrôleur frontal'
+#
+# --> Renommer le fichier .htaccess pour l'activer
+# -----------------------
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?op=$1 [NC,L,QSA]

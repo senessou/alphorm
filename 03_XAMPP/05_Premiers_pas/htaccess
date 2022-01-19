@@ -1,0 +1,6 @@
+# Renommer le fichier .htaccess
+
+AuthName "xampp user"
+AuthType Basic
+AuthUserFile /Applications/XAMPP/xamppfiles/lib/xampp.users
+require valid-user

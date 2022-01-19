@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+            ul {
+                list-style: none;
+                margin: 20vh auto;
+                background-color: #333;
+                border: 1px solid #FFF;
+                border-radius: 8px;
+                box-shadow: 0 0 12px 2px #CCC;
+                max-width: 50%;
+                padding: 0;
+            }
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+            li {
+                color: #FFF;
+                background-color: #333;
+                padding: 2rem;
+                transition: all 0.2s ease;
+            }
+            li:hover {
+                background-color: #F3F3F3;
+                color: #333;
+                transition: all 0.2s ease;
+            }
+            li:not(:last-of-type) {
+                border-bottom: 1px solid #EEE;
+            }
+            input {
+                display: inline-block;
+                margin: 0 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>
+                <a href="form_insert.php">Ajouter une tâche</a></li>
+            <li>
+                <a href="liste_taches.php">Voir toutes les tâches</a></li>
+            <li>
+                <form class="" action="recherche.php" method="get">
+                    <label for="valeur">Chercher les tâches de type :</label>
+                    <input type="text" name="valeur" value="" />
+                    <input type="submit" name="submit" value="Chercher" />
+                </form>
+            </li>
+        </ul>
+    </body>
+</html>

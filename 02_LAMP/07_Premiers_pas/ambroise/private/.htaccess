@@ -1,0 +1,6 @@
+Authtype Basic
+Authname "Accès restreint"
+AuthUserFile /var/www/.htpassword
+Require valid-user
+
+ErrorDocument 403 http://51.255.174.234/ambroise/403.html
